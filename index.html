@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PWATask</title>
+  </head>
+  <body>
+    <script src="script.js" async></script>
+    <script type="module" src="ServiceWorker.js"></script>
+    <div class="main_screen">
+      <div class="loader_screen" id="loader_screen"><img src="icon.png" /></div>
+      <div class="loader_wrapper hidden">
+        <div class="loader"></div>
+      </div>
+      <div class="content" id="content">
+        
+      </div>
+      <footer>
+        <nav>
+          <div class="part_1 active">Home</div>
+          <div class="part_2">Emojis</div>
+          <div class="part_3">Contacts</div>
+          <div class="part_4">Log's</div>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
